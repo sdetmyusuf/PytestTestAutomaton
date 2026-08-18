@@ -1,0 +1,7 @@
+2026-08-17 22:45:26 | INFO | GET /users/2
+2026-08-17 22:45:36 | INFO | GET /users/2 status=401
+2026-08-17 22:45:37 | INFO | GET /users
+2026-08-17 22:45:47 | INFO | GET /users?page=2 status=401
+2026-08-17 22:45:47 | INFO | POST /users {'name': 'morpheus', 'job': 'leader'}
+2026-08-17 22:45:58 | INFO | POST /users status=401 body={"error":"missing_api_key","message":"The x-api-key header is required for this endpoint.","hint":"Create a free key at app.reqres.in and send it as x-api-key.","next_steps":["Go to app.reqres.in/api-keys to get your key","Add header: x-api-key: <your_key>","For app user endpoints, use Authorization: Bearer <session_token> instead"],"docs_url":"https://app.reqres.in/docs#authentication","example_curl":"curl -H \"x-api-key: YOUR_API_KEY\" https://api.reqres.in/api/collections","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_a","message":"API key invalid or revoked. Create a new key in API Keys.","cta":{"label":"Get a key","url":"https://app.reqres.in/api-keys"},"context":"invalid_key"}}
+2026-08-17 22:46:13 | INFO | POST /users {'username': 'testuser', 'password': 'password123'}

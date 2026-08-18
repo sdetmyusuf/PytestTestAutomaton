@@ -1,0 +1,32 @@
+local:
+  driver: selenium
+  app:
+    base_url: "https://rahulshettyacademy.com/AutomationPractice"
+  api:
+    base_url: "https://reqres.in/api"
+    token: null
+    api_key: null
+
+qa:
+  driver: playwright
+  app:
+    base_url: "https://qa.example.com"
+  api:
+    base_url: "https://qa-api.example.com"
+    token: "qa-token-123"
+
+stage:
+  driver: selenium
+  app:
+    base_url: "https://stage.example.com"
+  api:
+    base_url: "https://stage-api.example.com"
+    token: "stage-token-456"
+
+prod:
+  driver: selenium
+  app:
+    base_url: "https://prod.example.com"
+  api:
+    base_url: "https://prod-api.example.com"
+    token: "prod-token-789"
